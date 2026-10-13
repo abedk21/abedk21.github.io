@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Abed Koleilat — AI/ML cloud specialist and backend engineer working across Google Cloud, LLM systems, Python, Go, APIs, Kubernetes, and production troubleshooting." />
+  <meta name="description" content="Abed Koleilat — AI/ML Cloud Specialist with backend engineering experience across Google Cloud, Azure AI certification, AI agents, Python, Go, and cross-team technical problem solving." />
   <meta name="theme-color" content="#0a0f1e" />
-  <meta property="og:title" content="Abed Koleilat — AI/ML Cloud & Backend Engineer" />
+  <meta property="og:title" content="Abed Koleilat — AI/ML Cloud Specialist | Backend & AI Integrations" />
   <meta property="og:description" content="AI/ML cloud, backend engineering, enterprise integrations, and production systems." />
   <meta property="og:type" content="website" />
-  <title>Abed Koleilat — AI/ML Cloud & Backend Engineer</title>
+  <title>Abed Koleilat — AI/ML Cloud Specialist | Backend & AI Integrations</title>
   <style>
     :root {
       --bg: #0a0f1e;
@@ -94,6 +94,10 @@
     .card ul { padding-left: 20px; }
     .stack { margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--line); color: #d4dcf3; font-size: .91rem; font-weight: 700; }
     .skills { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
+    .work { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 18px; }
+    .work .card { border-top: 3px solid var(--accent); }
+    .work .card .role { font-size: .84rem; color: var(--accent); font-weight: 750; letter-spacing: .03em; margin: 0 0 10px; }
+    .work .card h3 { margin-bottom: 12px; }
     .skill { padding: 24px; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); }
     .skill h3 { margin-bottom: 8px; }
     .skill p { margin: 0; color: var(--muted); }
@@ -106,7 +110,7 @@
     .footer { min-height: 90px; display: flex; align-items: center; justify-content: space-between; gap: 18px; font-size: .9rem; }
     @media (max-width: 900px) {
       .hero,.contact { grid-template-columns: 1fr; }
-      .cards { grid-template-columns: 1fr; }
+      .cards,.work { grid-template-columns: 1fr; }
       .hero { min-height: auto; padding-top: 72px; }
       .contact .actions { justify-content: flex-start; }
     }
@@ -137,6 +141,7 @@
       <nav aria-label="Primary navigation">
         <a href="#focus">Focus</a>
         <a href="#skills">Skills</a>
+        <a href="#work">Technical work</a>
         <a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -146,12 +151,14 @@
   <main id="main">
     <section class="hero shell" id="top">
       <div>
-        <p class="eyebrow">AI/ML Cloud Specialist · Backend Engineer</p>
+        <p class="eyebrow">AI/ML Cloud Specialist · Backend engineering · AI integrations</p>
         <h1>Building practical AI systems and reliable cloud software.</h1>
         <p class="lede">
-          I work across AI/ML cloud platforms, backend engineering, enterprise integrations,
-          and production troubleshooting — with hands-on experience in Google Cloud, Vertex AI,
-          Gemini Enterprise, RAG and LLM workflows, Python, Go, REST APIs, Kubernetes, and distributed systems.
+          I investigate enterprise cloud and AI platform issues, reproduce complex failures in
+          controlled projects, develop Python diagnostic tooling and AI integration prototypes,
+          and recommend technical solutions. I collaborate with product engineering when
+          deeper platform fixes are needed. My background also includes Go/Python backend
+          services and enterprise APIs.
         </p>
         <div class="actions">
           <a class="button primary" href="#focus">Explore my focus</a>
@@ -164,7 +171,7 @@
         <p class="metric"><span>6+</span> years professional experience</p>
         <p class="metric"><span>AI/ML</span> cloud & agent workflows</p>
         <p class="metric"><span>Python · Go</span> backend engineering</p>
-        <p class="metric"><span>GCP · AWS</span> cloud certifications</p>
+        <p class="metric"><span>GCP · AWS · Azure AI</span> cloud & AI certifications</p>
       </aside>
     </section>
 
@@ -182,7 +189,7 @@
         <article class="card">
           <h3>AI/ML Cloud Systems</h3>
           <p>
-            Designing, integrating, and troubleshooting AI/ML cloud workflows for real production environments.
+            Prototyping, validating, and troubleshooting AI/ML cloud workflows in enterprise environments.
           </p>
           <ul>
             <li>Vertex AI and Gemini Enterprise</li>
@@ -196,7 +203,7 @@
         <article class="card">
           <h3>Backend & Platform Engineering</h3>
           <p>
-            Building and operating backend services with an emphasis on reliability, maintainability, and cloud-native deployment.
+            Backend software development experience with an emphasis on APIs, reliability, secure integrations, and cloud-native systems.
           </p>
           <ul>
             <li>Python and Go services</li>
@@ -210,7 +217,7 @@
         <article class="card">
           <h3>Production & Enterprise Troubleshooting</h3>
           <p>
-            Working through complex technical issues across applications, infrastructure, integrations, and cloud services.
+            Independently reproducing technical issues, proposing solutions, and coordinating with product engineering on confirmed defects and blockers.
           </p>
           <ul>
             <li>Production incident investigation</li>
@@ -249,6 +256,34 @@
       </div>
     </section>
 
+    <section class="section shell" id="work">
+      <div class="heading">
+        <p class="eyebrow">Experience in practice</p>
+        <h2>Selected technical work</h2>
+        <p>These examples describe my own contributions and distinguish hands-on investigation from product fixes owned by engineering teams. Customer-specific information is intentionally omitted.</p>
+      </div>
+      <div class="work">
+        <article class="card">
+          <p class="role">Prototyping &amp; diagnosis</p>
+          <h3>AI agent and RAG validation</h3>
+          <p>Build controlled chat and agent prototypes to reproduce customer scenarios, check retrieval and grounding behavior, and isolate connector, authentication, and API configuration issues.</p>
+          <div class="stack">Vertex AI · Gemini Enterprise · RAG · Agents</div>
+        </article>
+        <article class="card">
+          <p class="role">Cross-team investigation</p>
+          <h3>Cloud platform troubleshooting</h3>
+          <p>Reproduce complex issues in test projects, analyze diagnostic evidence, propose customer-facing solutions, and collaborate with product engineering when defects or major blockers need deeper changes.</p>
+          <div class="stack">GCP · IAM · Kubernetes · Python · APIs</div>
+        </article>
+        <article class="card">
+          <p class="role">Previous backend engineering</p>
+          <h3>Go/Python services and integrations</h3>
+          <p>Developed backend APIs and microservice workflows for enterprise software, using input validation, access controls, integration error handling, and PostgreSQL query optimization.</p>
+          <div class="stack">Go · Python · REST APIs · PostgreSQL</div>
+        </article>
+      </div>
+    </section>
+
     <section class="section shell" id="certifications">
       <div class="heading">
         <p class="eyebrow">Credentials</p>
@@ -270,8 +305,9 @@
         <p class="eyebrow">Let’s connect</p>
         <h2>AI/ML cloud, backend, and platform engineering.</h2>
         <p>
-          I’m especially interested in roles where practical AI systems meet production-grade software,
-          cloud architecture, enterprise integrations, and customer-facing problem solving.
+          I’m interested in roles where AI integration, backend engineering, cloud reliability,
+          and enterprise technical solutions overlap. My work combines independent investigation,
+          hands-on prototypes and diagnostics, and close collaboration with product engineering.
         </p>
       </div>
       <div class="actions">
