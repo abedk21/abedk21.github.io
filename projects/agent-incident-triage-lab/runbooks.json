@@ -1,0 +1,6 @@
+[
+  {"id": "RB-AUTH", "title": "OAuth connector permission failures", "symptoms": "403 PERMISSION_DENIED, missing OAuth scope when calling tools", "guidance": "Compare consented scopes with the connector's required scopes; do not log access tokens."},
+  {"id": "RB-QUOTA", "title": "Quota and rate limiting", "symptoms": "429 RESOURCE_EXHAUSTED during agent tool bursts", "guidance": "Check per-minute quota and rate of requests; back off and use jitter."},
+  {"id": "RB-RAG", "title": "Retrieval and grounding regressions", "symptoms": "Missing grounding citations; retrieval context not injected", "guidance": "Check retrieval enablement, document visibility and grounding tests."},
+  {"id": "RB-ESC", "title": "Unknown incident escalation", "symptoms": "Unexplained intermittent latency", "guidance": "Gather timestamps, correlation IDs and a minimal reproduction before escalation."}
+]

@@ -1,0 +1,26 @@
+{
+  "auth": {
+    "id": "SYN-001", "summary": "Agent platform connector fails during an OAuth-backed tool call",
+    "logs": [{"id": "LOG-101", "message": "Tool invocation failed: 403 PERMISSION_DENIED after OAuth scope check"}],
+    "config": {"required_scope": "read:documents", "granted_scopes": ["read:profile"], "service": "synthetic-document-connector"},
+    "metrics": {"error_rate": 0.82, "quota_utilization": 0.15}, "expected": "oauth_scope_mismatch"
+  },
+  "quota": {
+    "id": "SYN-002", "summary": "LLM agent tool calls intermittently return resource exhausted",
+    "logs": [{"id": "LOG-201", "message": "Tool request returned HTTP 429 RESOURCE_EXHAUSTED on burst"}],
+    "config": {"retry_policy": "jittered"}, "metrics": {"error_rate": 0.44, "quota_utilization": 0.97},
+    "expected": "quota_exhaustion"
+  },
+  "retrieval": {
+    "id": "SYN-003", "summary": "RAG agent responses show missing grounding citations",
+    "logs": [{"id": "LOG-301", "message": "Grounding stage did not attach retrieval context"}],
+    "config": {"retrieval_enabled": false}, "metrics": {"grounding_score": 0.2},
+    "expected": "retrieval_disabled"
+  },
+  "unknown": {
+    "id": "SYN-004", "summary": "Intermittent latency without a clear cause",
+    "logs": [{"id": "LOG-401", "message": "Response time exceeded nominal p95 threshold"}],
+    "config": {"service": "synthetic-agent"}, "metrics": {"p95_latency_ms": 1300},
+    "expected": "insufficient_evidence"
+  }
+}
